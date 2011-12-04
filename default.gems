@@ -1,0 +1,23 @@
+# default.gems generated gem export file. Note that any env variable settings will be missing. Append these after using a ';' field separator
+amq-client -v0.8.6
+amq-protocol -v0.8.4
+amqp -v0.8.3
+async-rack -v0.5.1
+daemons -v1.1.4
+em-synchrony -v1.0.0
+eventmachine -v1.0.0.beta.4
+eventmachine -v0.12.10
+goliath -v0.9.4
+http_parser.rb -v0.5.3
+http_router -v0.9.7
+log4r -v1.1.9
+multi_json -v1.0.4
+rack -v1.3.5
+rack-accept-media-types -v0.9
+rack-contrib -v1.1.0
+rack-protection -v1.1.4
+rack-respond_to -v0.9.8
+sinatra -v1.3.1
+thin -v1.3.1
+tilt -v1.3.3
+url_mount -v0.2.1
