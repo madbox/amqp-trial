@@ -3,7 +3,7 @@
 ** default.gems
    'rvm gemset import' this
 ** consumer.rb
-   'ruby consumer.rb' then play with oter files
+   'ruby consumer.rb' then play with other files
 ** producer.rb
    'ruby producer.rb' just post one message
 ** Examples from ruby-amqp tutorial
