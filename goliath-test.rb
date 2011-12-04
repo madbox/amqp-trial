@@ -1,3 +1,6 @@
+# Simple goliath-based web server. Creates amqp message on every
+# request.
+
 require 'goliath'
 require 'amqp'
 
