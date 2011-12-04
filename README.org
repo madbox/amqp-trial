@@ -1,0 +1,17 @@
+* Simple amqp examples
+  3 hours of playing with amqp and web-servers.
+** default.gems
+   'rvm gemset import' this
+** consumer.rb
+   'ruby consumer.rb' then play with oter files
+** producer.rb
+   'ruby producer.rb' just post one message
+** Examples from ruby-amqp tutorial
+   Slightly changes examples, nothig special
+*** example1.rb
+*** example2.rb
+*** example3.rb
+** sinatratest.ru
+   sinatra application in one rack file
+** goliath-test.rb
+   simple web server
