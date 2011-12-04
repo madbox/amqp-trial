@@ -1,5 +1,5 @@
 * Simple amqp examples
-  3 hours of playing with amqp and web-servers.
+  3 hours of playing with amqp and web-servers. Install RabbitMQ before using this.
 ** default.gems
    'rvm gemset import' this
 ** consumer.rb
