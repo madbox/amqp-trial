@@ -7,7 +7,7 @@
 ** producer.rb
    'ruby producer.rb' just post one message
 ** Examples from ruby-amqp tutorial
-   Slightly changes examples, nothig special
+   Slightly changed examples, nothig special
 *** example1.rb
 *** example2.rb
 *** example3.rb
