@@ -10,10 +10,23 @@ EventMachine.run do
 
     channel = AMQP::Channel.new(connection)
 
-    channel.queue("q1").subscribe do |payload|
-      puts "Received a message on q1: #{payload}."
-    end
+    channel.queue("tasks").subscribe do |metadata, payload|
+      puts "Received a shout, obeying to producer"
+      # Lets find any digits in payload and do some 'hard work' to consume more time and CPU
+      if payload.match(/(\d+)/)
+        count = $1 
+        puts "Doing something #{count} times"
+        t1 = Time.now; count.to_i.times { rand (8) }
+        time_diff = (Time.now - t1) * 1000.0
+        puts "Done in #{time_diff} msec"
 
-    channel.direct("").publish "Initializing", :routing_key => "q1"
+        # Replying to queue given in metadata.reply_to by producer
+        channel.direct("").publish("Task done in #{time_diff} msec",
+                                   :routing_key => metadata.reply_to,
+                                   :correlation_id => metadata.correlation_id)
+      else
+        puts "Something wrong! There is no digits!"
+      end
+    end
   end
 end
